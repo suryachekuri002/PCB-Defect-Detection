@@ -1,4 +1,12 @@
 [phases.setup]
 aptPkgs = [
-  "libglib2.0-0"
+  "libgl1",
+  "libglib2.0-0",
+  "libsm6",
+  "libxrender1",
+  "libxext6"
 ]
+
+[phases.start]
+cmd = "gunicorn app:app"
+
