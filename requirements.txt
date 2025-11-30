@@ -1,0 +1,9 @@
+Flask
+Flask-Mail
+ultralytics
+opencv-python
+pandas
+Pillow
+numpy
+gunicorn
+
