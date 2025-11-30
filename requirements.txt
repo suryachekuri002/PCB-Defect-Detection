@@ -11,8 +11,6 @@ Flask==3.1.2
 Flask-Mail==0.10.0
 gunicorn==23.0.0
 
-# OpenCV - HEADLESS (Railway compatible)
-opencv-python-headless==4.9.0.80
 
 # Core dependencies
 Pillow==10.3.0
