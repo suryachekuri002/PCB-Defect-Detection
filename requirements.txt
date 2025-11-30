@@ -1,19 +1,10 @@
-# Torch CPU (compatible with Python 3.12)
-torch
-torchvision
---extra-index-url https://download.pytorch.org/whl/cpu
-
-# Flask
-Flask
-Flask-Mail
-gunicorn
-
-
-# Core dependencies
-Pillow
-numpy
-pandas
-
-
 opencv-python-headless==4.10.0.84
 ultralytics
+torch
+torchvision
+Flask
+gunicorn
+pandas
+numpy
+Pillow
+Flask-Mail
