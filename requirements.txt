@@ -1,10 +1,9 @@
-# --- CPU PyTorch (Stable) ---
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
-torchaudio==2.2.2+cpu
+# --- CPU PyTorch (Python 3.12 compatible) ---
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# --- Ultralytics YOLO ---
+# --- YOLO ---
 ultralytics==8.3.12
 
 # --- Flask App ---
@@ -12,7 +11,7 @@ Flask==3.1.2
 Flask-Mail==0.10.0
 gunicorn==23.0.0
 
-# --- Image & ML Requirements ---
+# --- Image & Scientific packages ---
 opencv-python==4.9.0.80
 Pillow==10.3.0
 numpy==1.26.4
