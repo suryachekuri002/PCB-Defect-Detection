@@ -1020,18 +1020,16 @@ body {
 
 /* Result Page Stylings */
 .result-background{
-    background: url('./Assets/p.jpg') no-repeat center center/cover;
+    background: url('./Assets/ultra.jpg') no-repeat center center/cover;
 }
 
-/* ------------------------------------------------------------- */
-/*                     PAGE TITLE / SECTIONS                     */
-/* ------------------------------------------------------------- */
-
-h2, h3, h4, h5 {
-    color: #00e6a8;
-    text-shadow: 0 0 8px rgba(0, 255, 180, 0.5);
+.result-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6); /* Slight dark overlay */
+    z-index: -1;  /* overlay goes BEHIND content + navbar */
 }
-
 
 /* ------------------------------------------------------------- */
 /*                     MAIN RESULT CONTAINER                     */
@@ -1101,8 +1099,18 @@ h2, h3, h4, h5 {
 /* ------------------------------------------------------------- */
 
 .text-success {
-    color: #00ffbf !important;
-    text-shadow: 0 0 12px #00ffbf;
+    color: #c38cc8 !important;
+    text-shadow: 0 0 12px #c38cc8;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00eaff, #0066ff);
+    border: none;
+    /* box-shadow: 0 0 12px rgba(0,255,255,0.5)9; */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #33f2ff, #1d7dff);
 }
 
 /* ------------------------------------------------------------- */

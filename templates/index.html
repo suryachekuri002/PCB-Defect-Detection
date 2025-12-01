@@ -62,9 +62,7 @@
             <div class="summary-card mx-auto " style="max-width:850px;">
                 <h2 class="fw-bold text-center">AI-Powered PCB Defect Detection</h2>
                 <p class="mt-3 text-center">
-                    Circuit Sherlock is an advanced Deep Learning system that detects defects in PCB images and videos
-                    using Computer Vision and AI-driven analytics. Upload your PCB file to analyze defects in seconds.
-                </p>
+                    Circuit Sherlock is an AI-powered system that detects defects in bare PCBs using a YOLO deep-learning model. Upload an image or use your live camera feed to analyze PCB defects instantly.
                 <div class="text-center mt-4">
                     <button id="startDetectionBtn" class="btn btn-primary px-4 py-2 rounded-3 fw-semibold detect-btn">
                         Start Detection
@@ -139,12 +137,12 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne">
-                                        Defect Summary
+                                        What is Circuit Sherlock?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Summary of detected defects will appear here.
+                                        Circuit Sherlock is an AI-based system that identifies defects in bare PCB images using computer vision and deep learning.
                                     </div>
                                 </div>
                             </div>
@@ -153,12 +151,12 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTwo">
-                                        Confidence Scores
+                                        Can I use my webcam for detection?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Model confidence details here.
+                                        Yes. The system supports live video camera detection for real-time PCB inspection.
                                     </div>
                                 </div>
                             </div>
@@ -167,12 +165,26 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseThree">
-                                        Recommendations
+                                        Is my uploaded data stored?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Repair and troubleshooting recommendations.
+                                        No. Images and camera frames are processed temporarily and not saved.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree">
+                                        Do I need to install anything?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        No. You can directly upload an image or stream from your camera through the web interface.
                                     </div>
                                 </div>
                             </div>

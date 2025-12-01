@@ -21,7 +21,10 @@
     <!-- navbar start -->
     <nav class="navbar navbar-scrolled navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand fs-4" href="#">Circuit <span>Sherlock</span> </a>
+            <a class="navbar-brand fs-4 about-title" href="#"><span><img
+                            src="{{ url_for('static', filename='assets/logo.png')}}" alt=""
+                            width="55px" height="55px" class="mb-2" /></span>Circuit <span
+                        class="heading-2">Sherlock</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,7 +61,7 @@
 
     <div class="container my-5">
 
-        <h2 class="text-center mb-4">🔍 PCB Defect Detection Result</h2>
+        <h2 class="text-center text-white mb-4">🔍 PCB Defect Detection Result</h2>
 
         <!-- MAIN TWO-COLUMN BOX -->
         <div class="p-4 shadow rounded-4 bg-white">
@@ -71,7 +74,7 @@
                     <!-- Defects Card -->
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h4 class="card-title">🟩 Detected Defects</h4>
+                            <h4 class="card-title">🟪 Detected Defects</h4>
                             {% if defects %}
                             <ul class="list-group list-group-flush mt-3">
                                 {% for d in defects %}
